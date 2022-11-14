@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Last Page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="game.css" />
+    <link href="/favicon.ico" type="image/xcon" rel="icon">
+  </head>
+  <body>
+    <div id="canvabackground" class="container">
+      <div id="end" class="flex-center flex-column">
+        <h1 id="finalScore">Final Score 0</h1>
+        <form class="end-form-container">
+          <h2 id="end-text">"Please enter your name!</h2>
+          <input
+            type="text"
+            name="name"
+            id="username"
+            placeholder="Enter your name"
+          />
+          <button
+            class="btn"
+            id="saveScoreBtn"
+            type="submit"
+            onclick="saveHighScore(event)"
+            disabled
+          >
+            Save
+          </button>
+        </form>
+        <a href="game.html" class="btn">Play Again</a>
+        <a href="/" class="btn">Go Home</a>
+      </div>
+    </div>
+    <script src="end.js"></script>
+  </body>
+</html>

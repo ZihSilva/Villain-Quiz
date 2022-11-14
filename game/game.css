@@ -1,0 +1,87 @@
+body {
+  font-size: 8rem;
+}
+ #canvabackground{
+    background-image: url(./images/canvabackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    
+  }
+.choice-container {
+  display: flex;
+  margin-bottom: 0.8rem;
+  width: 100%;
+  border-radius: 4px;
+  font-size: 3rem;
+  border: 0.3rem solid #724C9D;
+  background-color: grey;
+  min-width: 60rem;
+  border-radius: 40rem;
+}
+
+.choice-container:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 grey;
+  transform: scale(1.02rem);
+  transition: transform 100ms;
+}
+
+.choice-prefix {
+  margin: 1rem;
+  padding: 2.5rem 2.5rem 2rem 2rem;
+  color: white;
+  background-color: #242422;
+  border-radius: 5em;
+}
+
+.choice-text {
+  padding: 1.5rem;
+  width: 100%;
+  font-size: 2.5rem;
+  font: "alfa slab one";
+}
+
+.correct {
+  background-color: #28a745;
+}
+
+.incorrect {
+  background: #dc3545;
+}
+
+#hud {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hud-prefix {
+  text-align: center;
+  font-size: 2.5rem;
+}
+.hud-main-text {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+#progressBar {
+  width: 20rem;
+  height: 4rem;
+  border: 0.3rem solid rgb(213, 140, 213);
+  margin-top: 2rem;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+#progressBarFull {
+  height: 3.4rem;
+  background-color: #505350;
+  width: 5%;
+}
+
+@media screen and (max-width: 768px) {
+  .choice-container {
+    min-width: 40rem;
+  }
+}
